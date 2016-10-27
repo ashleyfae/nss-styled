@@ -7,6 +7,7 @@
  * Author: Nose Graze
  * Author URI: https://www.nosegraze.com
  * License: GPL2
+ * GitHub Plugin URI: https://github.com/nosegraze/nss-styled
  *
  * @package   nss-styled
  * @copyright Copyright (c) 2016, Nose Graze Ltd.
