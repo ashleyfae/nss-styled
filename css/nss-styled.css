@@ -12,8 +12,6 @@
       .naked-social-share ul li {
         flex: 1; } }
 .naked-social-share a {
-  font-size: 22.4px;
-  font-size: 1.4rem;
   border: none;
   clear: both;
   color: white;
