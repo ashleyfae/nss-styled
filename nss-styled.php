@@ -36,7 +36,7 @@ function nss_styled_stylesheet() {
 	// Use minified libraries if SCRIPT_DEBUG is turned off
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
-	wp_deregister_style( 'nss-frontend' );
+	wp_dequeue_style( 'nss-frontend' );
 
 	wp_enqueue_style( 'nss-styled', plugin_dir_url( __FILE__ ) . 'css/nss-styled' . $suffix . '.css', array(), '1.0' );
 }
