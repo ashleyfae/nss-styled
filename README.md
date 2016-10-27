@@ -5,6 +5,8 @@ This plugin is an add-on for [Naked Social Share](https://github.com/nosegraze/n
 * Coloured backgrounds for social share sites (based on their branding).
 * A "total shares" section at the end that shows the total number of shares.
 
+![Styled Naked Social Share buttons](https://bossplugins.com/wp-content/uploads/2016/10/nss-styled.png)
+
 I recommend enabling no more than 3 social sites to avoid layout issues. If you use more than that, they may not all fit neatly on one line.
 
 ## Filters
