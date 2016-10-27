@@ -1,0 +1,110 @@
+@mixin background-hover($color, $amount: 10) {
+    background: $color;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background: darken($color, $amount);
+    }
+}
+
+@mixin clearfix() {
+    clear: both;
+    content: ' ';
+    display: table;
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+    font-size: ($sizeValue * 16) * 1px;
+    font-size: $sizeValue * 1rem;
+}
+
+$color-grey: #f4f4f4;
+
+.naked-social-share {
+    //background: $color-grey;
+    //padding: .5em 0;
+
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        margin: 0 -5px;
+        padding: 0;
+
+        li {
+            display: block;
+            flex: 50%;
+            margin: .5em 0;
+
+            @media (min-width: 768px) {
+                flex: 1;
+            }
+        }
+    }
+
+    a {
+        @include font-size(1.4);
+        border: none;
+        clear: both;
+        color: white;
+        display: block;
+        line-height: 27px;
+        margin: 0 5px;
+        padding: 5px 20px;
+        text-decoration: none;
+
+        &:before, &:after {
+            @include clearfix;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .nss-site-name {
+        //@include screen-reader-text;
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .nss-site-count {
+        float: right;
+    }
+
+    .nss-twitter a {
+        @include background-hover(#429cd6);
+    }
+
+    .nss-facebook a {
+        @include background-hover(#3a589e);
+    }
+
+    .nss-pinterest a {
+        @include background-hover(#cd2029);
+    }
+
+    .nss-stumbleupon a {
+        @include background-hover(#eb4924);
+    }
+
+    .nss-google a {
+        @include background-hover(#c53929);
+    }
+
+    .nss-all {
+        display: block;
+
+        > span {
+            display: block;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        .nss-total-count {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
+}
